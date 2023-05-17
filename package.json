@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "node --watch index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +18,5 @@
     "mysql2": "^3.3.1",
     "sequelize": "^6.31.1",
     "uuid": "^9.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
   }
 }
