@@ -6,9 +6,9 @@ class HeroController {
     async create(req, res, next) {
         try {
             let {name, rank, paragraph, award, poem} = req.body
-            const {photo} = req.files
-            let fileName = uuid.v4() + '.jpg'
-            photo.mv(path.resolve(__dirname, '..', 'static', fileName))
+            // const {photo} = req.files
+            // let fileName = uuid.v4() + '.jpg'
+            // photo.mv(path.resolve(__dirname, '..', 'static', fileName))
             const hero = await Hero.create({name, rank, photo: fileName})
 
 
